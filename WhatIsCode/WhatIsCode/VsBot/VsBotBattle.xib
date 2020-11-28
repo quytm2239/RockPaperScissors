@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VsBotBattle" customModule="WhatIsCode" customModuleProvider="target">
+            <connections>
+                <outlet property="arena" destination="SWL-PM-7yn" id="GnJ-A4-ipn"/>
+                <outlet property="labelWinner" destination="RQV-30-5cZ" id="Pzs-wh-FFo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SWL-PM-7yn">
+                    <rect key="frame" x="100" y="502" width="214" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="nZR-S5-yI4"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dHk-yL-RsI">
+                    <rect key="frame" x="107" y="622" width="200" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLh-9O-7sx">
+                            <rect key="frame" x="0.0" y="0.0" width="53.5" height="40"/>
+                            <state key="normal" image="icon_rock"/>
+                            <connections>
+                                <action selector="actionRock:" destination="-1" eventType="touchUpInside" id="0Jy-tp-Uhd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONQ-aI-mnw">
+                            <rect key="frame" x="73.5" y="0.0" width="53" height="40"/>
+                            <state key="normal" image="icon_paper"/>
+                            <connections>
+                                <action selector="actionPaper:" destination="-1" eventType="touchUpInside" id="0R6-P7-4mM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNX-xu-HyA">
+                            <rect key="frame" x="146.5" y="0.0" width="53.5" height="40"/>
+                            <state key="normal" image="icon_scissors"/>
+                            <connections>
+                                <action selector="actionSci:" destination="-1" eventType="touchUpInside" id="gn8-Me-sQB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bzO-ha-G7G"/>
+                        <constraint firstAttribute="width" constant="200" id="hDZ-ts-5LY"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ready!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQV-30-5cZ">
+                    <rect key="frame" x="174" y="249" width="41.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dHk-yL-RsI" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="1L1-gs-Bap"/>
+                <constraint firstItem="SWL-PM-7yn" firstAttribute="top" secondItem="RQV-30-5cZ" secondAttribute="bottom" constant="20" id="ASe-7P-Ecw"/>
+                <constraint firstItem="RQV-30-5cZ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WHY-bL-SHP"/>
+                <constraint firstItem="SWL-PM-7yn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="k3x-kx-TDq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SWL-PM-7yn" secondAttribute="trailing" constant="100" id="pNi-7l-spV"/>
+                <constraint firstItem="dHk-yL-RsI" firstAttribute="top" secondItem="SWL-PM-7yn" secondAttribute="bottom" constant="20" id="vpp-GC-2Oq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dHk-yL-RsI" secondAttribute="bottom" constant="200" id="waM-xD-zLp"/>
+            </constraints>
+            <point key="canvasLocation" x="-157.97101449275362" y="-21.428571428571427"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_paper" width="32" height="32"/>
+        <image name="icon_rock" width="32" height="32"/>
+        <image name="icon_scissors" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

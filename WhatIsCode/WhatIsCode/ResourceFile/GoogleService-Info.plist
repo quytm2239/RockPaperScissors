@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>382842671280-eimufi1973b0ecnhkjfktm5our9ebfpb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.382842671280-eimufi1973b0ecnhkjfktm5our9ebfpb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCLuF3uEy-eesLROAB64Viq6g5lcdoqTmU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>382842671280</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.quytm.whatiscode</string>
+	<key>PROJECT_ID</key>
+	<string>rpsgame-4bc44</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rpsgame-4bc44.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:382842671280:ios:81a20896fc484c14b66b75</string>
+	<key>DATABASE_URL</key>
+	<string>https://rpsgame-4bc44.firebaseio.com</string>
+</dict>
+</plist>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PlayerChoiceView" customModule="WhatIsCode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="266" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="The One:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BT-nc-ZtH">
+                    <rect key="frame" x="10" y="5" width="196" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rX-T4-H9b">
+                    <rect key="frame" x="10" y="26" width="34.5" height="19"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_rock" translatesAutoresizingMaskIntoConstraints="NO" id="T1f-cB-iat">
+                    <rect key="frame" x="226" y="12.5" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="Iq8-MX-GqV"/>
+                        <constraint firstAttribute="width" secondItem="T1f-cB-iat" secondAttribute="height" id="jaE-19-2ri"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8rX-T4-H9b" firstAttribute="top" secondItem="3BT-nc-ZtH" secondAttribute="bottom" constant="3" id="1vS-MN-Jfe"/>
+                <constraint firstItem="T1f-cB-iat" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5wD-5p-xY0"/>
+                <constraint firstItem="T1f-cB-iat" firstAttribute="leading" secondItem="3BT-nc-ZtH" secondAttribute="trailing" constant="20" id="CiL-Ro-aVe"/>
+                <constraint firstItem="3BT-nc-ZtH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="GKh-vr-mNE"/>
+                <constraint firstItem="8rX-T4-H9b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="U0F-fv-QY8"/>
+                <constraint firstAttribute="trailing" secondItem="T1f-cB-iat" secondAttribute="trailing" constant="15" id="c7h-8C-Pw9"/>
+                <constraint firstItem="3BT-nc-ZtH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="dZ8-0j-ELL"/>
+                <constraint firstAttribute="bottom" secondItem="8rX-T4-H9b" secondAttribute="bottom" constant="5" id="xJk-BQ-JNj"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="icon" destination="T1f-cB-iat" id="eOe-dh-aHg"/>
+                <outlet property="labelPlayerChoice" destination="8rX-T4-H9b" id="pmR-hu-64v"/>
+                <outlet property="labelPlayerName" destination="3BT-nc-ZtH" id="gvM-Hr-cSS"/>
+            </connections>
+            <point key="canvasLocation" x="-47.826086956521742" y="28.125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_rock" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
